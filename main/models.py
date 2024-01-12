@@ -142,10 +142,6 @@ class Contact(models.Model):
 
 
 class Location(models.Model):
-    name = models.CharField(max_length=255)
-    address = models.CharField(max_length=255)
-    phone = models.CharField(max_length=255)
-    phone1 = models.CharField(max_length=255)
     email = models.EmailField()
     rekvizit = models.FileField()
     working_hour = models.ManyToManyField('WorkingHours')
